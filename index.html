@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="React Client Template" />
+
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="manifest" href="./manifest.json" />
+    <link href="https://shell-fonts.azureedge.net/index.css" rel="stylesheet" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="React Client Template" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+    <title>React Client Template</title>
+
+    <script type="text">
+        %REACT_APP_ENV%
+    </script>
+    <script>
+        window.ENV = null;
+        try {
+            window.ENV = JSON.parse(document.scripts[0].innerText);
+        } catch (error) {}
+    </script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="src\style.css">
+    <title> Chat</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+             Chat
+        </div>
+
+        <div class="message-section" id="messageSection">
+           
+
+        </div>
+
+        <div class="input-section">
+            <input type="text" class="input" id="txtMessage" />
+            <button class="btn" id="btnSend">Send</button>
+        </div>
+    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script src="/node_modules/@microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="src\chat.js"></script>
+</body>
+
+</html>
