@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2024-01-05T07:01:23.7945779Z"
+    },
+    "signalr1": {
+      "restored": true,
+      "restoreTime": "2024-01-05T07:01:39.4118858Z"
+    }
+  },
+  "parameters": {
+    "signalr1.resourceGroupName": {
+      "Name": "signalr1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "sbox-qgctest-dev-rg"
+    },
+    "signalr1.subscriptionId": {
+      "Name": "signalr1.subscriptionId",
+      "Type": "subscription",
+      "Value": "94d67791-6e06-4f77-bc46-0b862e8aeb03"
+    }
+  }
+}
